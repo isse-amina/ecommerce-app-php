@@ -1,0 +1,13 @@
+.main__content.returns__page {
+    max-width: 750px; 
+    line-height: 30px; 
+    margin: 0 auto 30px auto; 
+    padding: 30px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.main__content.returns__page .page__title {
+    margin: 30px 0;
+    text-align: center;  
+}

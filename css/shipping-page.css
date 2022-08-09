@@ -1,0 +1,30 @@
+.main__content.shipping__page {
+    max-width: 750px; 
+    line-height: 30px; 
+    margin: 0 auto 30px auto; 
+    padding: 30px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.main__content.shipping__page .page__title {
+    margin: 30px 0;
+    text-align: center;  
+}
+
+.main__content.shipping__page table,
+.main__content.shipping__page th,
+.main__content.shipping__page td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px; 
+    margin: 15px 0; 
+}
+
+@media only screen and (max-width: 375px) {
+    .main__content.shipping__page table,
+    .main__content.shipping__page th,
+    .main__content.shipping__page td {
+        padding: 5px; 
+    }
+}

@@ -1,0 +1,86 @@
+.main__content.contact__page {
+    max-width: 750px; 
+    line-height: 30px; 
+    margin: 0 auto 30px auto; 
+    padding: 30px;
+    display: flex; 
+    flex-direction: column; 
+}
+
+.main__content.contact__page .page__title {
+    margin: 30px 0;
+    text-align: center;  
+}
+
+.main__content.contact__page .mailing__address {
+    text-align: center; 
+    color: #58595b; 
+    margin: 0; 
+}
+
+.contact__form {
+    display: grid;
+    grid-template-areas:
+        'contactname contactemail'
+        'contactsubject contactsubject'
+        'contactmessage contactmessage'
+        'sendmail sendmail';
+    gap: 10px;
+    padding: 10px;
+}
+
+#contactname {
+    grid-area: contactname;
+}
+
+#contactemail {
+    grid-area: contactemail;
+}
+
+#contactsubject {
+    grid-area: contactsubject;
+}
+
+#contactmessage {
+    grid-area: contactmessage; 
+    min-height: 200px; 
+    resize: vertical; 
+    padding-top: 0;
+    margin-bottom: 20px; 
+}
+
+#contactname,
+#contactemail,
+#contactsubject,
+#contactmessage {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 10px; 
+    border: 1px solid #58595b;
+}
+
+#sendmail {
+    grid-area: sendmail; 
+    width: 100px;
+    padding: 15px;  
+    font-weight: 900;
+    color: white;
+    background-color: black;  
+    border: none;  
+}
+
+#sendmail:hover {
+    background-color: #b48579; 
+    cursor: pointer; 
+}
+
+@media only screen and (max-width: 768px) {
+    .main__content.contact__page .contact__form {
+        grid-template-areas:
+            'contactname contactname'
+            'contactemail contactemail'
+            'contactsubject contactsubject'
+            'contactmessage contactmessage'
+            'sendmail sendmail';
+    }
+}

@@ -1,0 +1,77 @@
+.main__content.login__page {
+    max-width: 750px; 
+    line-height: 30px; 
+    margin: 0 auto 30px auto; 
+    padding: 30px;
+}
+
+.main__content.login__page .page__title {
+    margin: 30px 0;
+    text-align: center;  
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column; 
+    padding: 10px;
+    max-width: 420px; 
+    margin: 0 auto;  
+}
+
+#loginemail,
+#loginpassword {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border: 1px solid #58595b;   
+}
+
+#sendlogin {
+    width: 125px;
+    height: 45px; 
+    padding: 15px;  
+    font-weight: 900;
+    color: white;
+    background-color: black;  
+    border: none;  
+    margin-right: 20px;
+}
+
+#sendlogin:hover {
+    background-color: #b48579; 
+    cursor: pointer; 
+}
+
+.login__form .additional__details {
+    display: flex; 
+}
+
+.login__form .additional__details p {
+    margin: 0; 
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.login__form .additional__details a {
+    text-decoration: underline; 
+    color: #b48579; 
+}
+
+.login__form span {
+    margin-bottom: 20px; 
+}
+
+.login__form input[type=checkbox] {
+    transform: scale(1.25);
+    margin-right: 5px; 
+}
+
+@media only screen and (max-width: 475px) {
+    .login__form .additional__details {
+        flex-direction: column; 
+    }
+    .login__form .additional__details div {
+        margin-top: 20px; 
+    }
+}
